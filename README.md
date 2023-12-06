@@ -32,7 +32,10 @@ Docker Compose version v2.10.2
 
 ## Initial setup
 ```
-cp .env.example .env
+- create a .env file, and add the following variables:
+  - PGHOST=db
+  - PGUSER=postgres # any other name
+  - PGPASSWORD=password123 # or write any other password
 docker compose build
 docker compose run --rm web bin/rails db:setup
 ```
