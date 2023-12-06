@@ -36,6 +36,7 @@ Docker Compose version v2.10.2
   - PGHOST=db
   - PGUSER=postgres # any other name
   - PGPASSWORD=password123 # or write any other password
+  
 docker compose build
 docker compose run --rm web bin/rails db:setup
 ```
