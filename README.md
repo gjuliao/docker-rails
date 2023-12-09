@@ -35,8 +35,8 @@ Docker Compose version v2.10.2
 - create a .env file, and add the following variables:
    - POSTGRES_DB=db
    - PGHOST=db
-   - POSTGRES_USER=postgres
-   - POSTGRES_PASSWORD=password12345
+   - POSTGRES_USER=postgres # change it as needed
+   - POSTGRES_PASSWORD=password12345 # change it as needed
   
 docker compose build
 docker compose run --rm web bin/rails db:setup
